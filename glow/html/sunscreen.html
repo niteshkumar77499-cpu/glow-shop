@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glow - Sunscreens</title>
+  <link rel="stylesheet" href="../css/glow.css">
+  <link rel="stylesheet" href="../css/productgrid.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="logo"><img src="../glow/Glow_Logo_Concept_Gold.jpg" alt="Glow"></div>
+    <div class="nav-links">
+      <a href="glow.html" class="nav-item">Home</a>
+      <a href="serum.html" class="nav-item">Serum</a>
+      <a href="sunscreen.html" class="nav-item">Sunscreen</a>
+      <a href="facecleanser.html" class="nav-item">Face Cleanser</a>
+      <a href="moisturizer.html" class="nav-item">Moisturizer</a>
+    </div>
+    <div class="nav-actions">
+      <input id="search-bar" placeholder="Search products...">
+      <button class="icon-btn"><i class="fas fa-search"></i></button>
+      <button class="icon-btn cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+
+      <div class="user-area" style="display:none;align-items:center;gap:8px;margin-left:8px">
+        <span id="welcome-user" class="welcome-user"></span>
+        <button id="user-btn" class="user-btn"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="dropdown-menu" class="dropdown-menu">
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="login-btn" class="btn-login">Login</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="product-grid">
+      <h2 id="grid_product-name">Sunscreens</h2>
+      <div class="grid_product-img">
+        <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Balance_Sunscreen.jpg" alt="">
+          <div class="grid_price"><h2>Balance SPF 40</h2><p>For combination skin</p><p>Rs.1399</p><button class="crt-btn">Add to Cart</button></div>
+        </div>
+        <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Hydrate_Sunscreen.jpg" alt="">
+          <div class="grid_price"><h2>Hydrate SPF 40</h2><p>For dry skin</p><p>Rs.1299</p><button class="crt-btn">Add to Cart</button></div>
+        </div>
+        <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Oil_Control_Sunscreen.jpg" alt="">
+          <div class="grid_price"><h2>Gel SPF 40</h2><p>For oily skin</p><p>Rs.1399</p><button class="crt-btn">Add to Cart</button></div>
+        </div>
+         <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Renew_Sunscreen.jpg" alt="">
+          <div class="grid_price"><h2>Gel SPF 40</h2><p>For oily skin</p><p>Rs.1399</p><button class="crt-btn">Add to Cart</button></div>
+        </div>
+         <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Sensitive_Sunscreen.jpg" alt="">
+          <div class="grid_price"><h2>Gel SPF 40</h2><p>For oily skin</p><p>Rs.1399</p><button class="crt-btn">Add to Cart</button></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section"><h4>Company</h4><ul><li><a href="#">About</a></li></ul></div>
+      <div class="footer-section"><h4>Help</h4><ul><li><a href="#">FAQs</a></li></ul></div>
+      <div class="footer-section"><h4>Contact</h4><p><a href="mailto:niteshkumar77499@gmail.com">niteshkumar77499@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom">© 2025 Glow</div>
+  </footer>
+
+  <script src="../js/glow.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Make body take full height and footer stick to bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main content grows to fill space above footer */
+main {
+  flex: 1;
+  padding: 28px;
+}
+
+/* Cart rows styling */
+#cart-items-list .cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Empty Cart button */
+#empty-cart-btn {
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4d4f;
+  color: #fff;
+  cursor: pointer;
+}
+
+#empty-cart-btn:hover {
+  background: #e63946;
+}

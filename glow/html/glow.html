@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glow - Home</title>
+  <link rel="stylesheet" href="../css/glow.css">
+  <link rel="stylesheet" href="../css/productgrid.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="logo"><img src="../glow/Glow_Logo_Concept_Gold.jpg" alt="Glow"></div>
+
+    <div class="nav-links">
+      <a href="glow.html" class="nav-item">Home</a>
+      <a href="serum.html" class="nav-item">Serum</a>
+      <a href="sunscreen.html" class="nav-item">Sunscreen</a>
+      <a href="facecleanser.html" class="nav-item">Face Cleanser</a>
+      <a href="moisturizer.html" class="nav-item">Moisturizer</a>
+    </div>
+
+    <div class="nav-actions">
+      <input id="search-bar" placeholder="Search products...">
+      <button class="icon-btn"><i class="fas fa-search"></i></button>
+      <button class="icon-btn cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+
+      <!-- user area shown when logged in -->
+      <div class="user-area" style="display:none;align-items:center;gap:8px;margin-left:8px">
+        <span id="welcome-user" class="welcome-user"></span>
+        <button id="user-btn" class="user-btn"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="dropdown-menu" class="dropdown-menu">
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="login-btn" class="btn-login">Login</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-sec">
+      <div class="slider">
+        <div class="slide"><img src="../glow/herosec/Glow Elegant Face Cleansers Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow/herosec/Glow Elegant Moisturizers Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow\herosec\Glow Elegant Serums Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow/herosec/Glow Elegant Sunscreens Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow/herosec/Glow Face Cleansers Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow/herosec/Glow_Night_Creams_Collection.jpg" alt=""></div>
+        <div class="slide"><img src="../glow/herosec/Glow_Serums_Benefits.jpg" alt=""></div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Glow Your Skin</h1>
+        <p>Premium skincare for everyone</p>
+        <button class="hero-btn" onclick="location.href='serum.html'">Shop Serums</button>
+      </div>
+    </section>
+
+    <!-- featured products quick grid -->
+    <div style="padding:24px 36px">
+      <h2 style="margin-bottom:12px">Featured</h2>
+      <div class="grid_product-img" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <div class="grid_prod">
+          <img src="../glow/serum/Glow_Glycolic_Acid_Serum_Front.jpg" alt="Serum">
+          <div class="grid_price">
+            <h2>2% Glycolic Serum</h2>
+            <p>Exfoliation</p>
+            <p>Rs.799</p>
+            <button class="crt-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="grid_prod">
+          <img src="../glow/sunscreem/Glow_Balance_Sunscreen.jpg" alt="Sunscreen">
+          <div class="grid_price">
+            <h2>SPF 40 Balance</h2>
+            <p>Daily protection</p>
+            <p>Rs.1399</p>
+            <button class="crt-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="grid_prod">
+          <img src="../glow/moisturizer/Glow_Moisturizer_Dry_Skin.jpg" alt="Moisturizer">
+          <div class="grid_price">
+            <h2>Hydrating Cream</h2>
+            <p>Deep hydration</p>
+            <p>Rs.1199</p>
+            <button class="crt-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section"><h4>Company</h4><ul><li><a href="#">About</a></li></ul></div>
+      <div class="footer-section"><h4>Help</h4><ul><li><a href="#">FAQs</a></li></ul></div>
+      <div class="footer-section"><h4>Contact</h4><p><a href="mailto:niteshkumar77499@gmail.com">niteshkumar77499@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom">© 2025 Glow</div>
+  </footer>
+
+  <script src="../js/glow.js"></script>
+</body>
+</html>
